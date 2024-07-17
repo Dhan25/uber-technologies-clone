@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "UberMove";
+    src: url(./Fonts/UberMoveBold.otf);
+    src: url(./Fonts/UberMoveMedium.otf);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .maxWidth {
+    @apply px-4 py-4 mx-auto;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .btn {
+    @apply hover:bg-gray-700/50 py-2 px-3 rounded-full
+  }
+}
